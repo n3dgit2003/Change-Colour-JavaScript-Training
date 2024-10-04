@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Color Change</title>
+    <style>
+        button
+        {
+            padding: 20px;
+            border-radius: 5%;
+            margin: 10px;
+            border-color: rgb(175, 175, 175);
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+<button id="red" style="background-color: red; color: bisque;" onclick="colorChange('red')">Red</button>
+<button id="blue" style="background-color: rgb(0, 17, 255); color: bisque;" onclick="colorChange('blue')">Blue</button>
+<button id="green" style="background-color: rgb(0, 153, 31); color: bisque;" onclick="colorChange('green')">Green</button>
+<button id="reset" style="background-color: rgb(255, 255, 255); color: black;"onclick="colorChange('white')">Reset</button>
+<script>
+    function colorChange(color) {
+        document.body.style.backgroundColor = color;
+    }
+
+</script>
+    
+</body>
+</html>
